@@ -1,2 +1,0 @@
-class CrawlsController < ApplicationController
-end

@@ -1,2 +1,0 @@
-class PubCrawlsController < ApplicationController
-end
