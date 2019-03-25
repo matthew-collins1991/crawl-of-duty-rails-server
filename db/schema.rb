@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_03_21_130253) do
+ActiveRecord::Schema.define(version: 2019_03_25_111839) do
 
   create_table "crawls", force: :cascade do |t|
     t.string "name"
@@ -19,6 +19,7 @@ ActiveRecord::Schema.define(version: 2019_03_21_130253) do
     t.integer "people"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "order_array"
   end
 
   create_table "pub_crawls", force: :cascade do |t|
@@ -33,6 +34,8 @@ ActiveRecord::Schema.define(version: 2019_03_21_130253) do
     t.string "name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "latitude"
+    t.integer "longitude"
   end
 
   create_table "ratings", force: :cascade do |t|
