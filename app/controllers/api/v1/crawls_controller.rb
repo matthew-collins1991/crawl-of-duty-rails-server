@@ -5,6 +5,11 @@ class Api::V1::CrawlsController < ApplicationController
         render json: @crawls
     end
 
+    def show
+        @crawl = Crawl.find_by(id: params[:id])
+        render json: @crawl
+    end
+
     def create
         # byebug
         @crawl = Crawl.create(crawl_params[:crawl])
