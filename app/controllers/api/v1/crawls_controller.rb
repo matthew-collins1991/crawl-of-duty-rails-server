@@ -5,4 +5,8 @@ class Api::V1::CrawlsController < ApplicationController
         render json: @crawls
     end
 
+    def create
+
+    end
+
 end
