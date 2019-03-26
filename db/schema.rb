@@ -10,12 +10,12 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_03_25_165515) do
+ActiveRecord::Schema.define(version: 2019_03_26_135210) do
 
   create_table "crawls", force: :cascade do |t|
     t.string "name"
-    t.datetime "start"
-    t.datetime "end"
+    t.datetime "start_time"
+    t.datetime "end_time"
     t.integer "people"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -34,8 +34,8 @@ ActiveRecord::Schema.define(version: 2019_03_25_165515) do
     t.string "name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.integer "latitude"
-    t.integer "longitude"
+    t.integer "lat"
+    t.integer "lng"
     t.string "four_id"
   end
 
