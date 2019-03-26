@@ -1,3 +1,3 @@
 class PubSerializer < ActiveModel::Serializer
-  attributes :id, :name
+  attributes :id, :name, :lat, :lng
 end
