@@ -23,7 +23,7 @@ class Api::V1::CrawlsController < ApplicationController
     private
 
     def crawl_params
-        params.permit({crawl: [:name, :order_array, :start_time, :end_time]}, {pubs: [:name, :lat, :lng, :four_id]})
+        params.permit({crawl: [:name, :order_array, :start_time, :end_time, :location]}, {pubs: [:name, :lat, :lng, :four_id]})
     end
 
 end
