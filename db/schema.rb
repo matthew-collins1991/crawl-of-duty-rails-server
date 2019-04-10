@@ -12,6 +12,9 @@
 
 ActiveRecord::Schema.define(version: 2019_03_27_102825) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "crawls", force: :cascade do |t|
     t.string "name"
     t.datetime "start_time"
