@@ -16,6 +16,6 @@ class Api::V1::PubsController < ApplicationController
     private
 
     def pub_params
-        params.permit(pubs: [:name, :lat, :lng, :four_id])
+        params.permit({pubs: [:name, :lat, :lng, :four_id]})
     end
 end
